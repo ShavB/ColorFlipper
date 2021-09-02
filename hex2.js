@@ -11,9 +11,18 @@ btn.addEventListener("click",function(){
 
     color.textContent = hexColor;
     document.body.style.backgroundColor = hexColor;
-    console.log(document.body);
+    //console.log(document.body);
 });
 
 function getRandomNumbers1(){
     return Math.floor(Math.random()*colors.length);
+}
+
+function copyPaste(){
+    const copyText = document.getElementById("clip").textContent;
+    //copyText.select();
+    // copyText.setSelectionRange(0, 99999);
+    var clip = navigator.clipboard.writeText(copyText);
+    //console.log(clip);
+    window.alert("Value Copied : " + copyText);
 }

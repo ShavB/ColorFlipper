@@ -6,7 +6,7 @@ const color = document.querySelector('.color');
 btn.addEventListener("click",function(){
 
     const randomNumbers = getRandomNumbers();
-    console.log(randomNumbers);
+    //console.log(randomNumbers);
     document.body.style.backgroundColor = colors[randomNumbers];
     color.textContent = colors[randomNumbers];
     // console.log(document.body);
@@ -14,4 +14,13 @@ btn.addEventListener("click",function(){
 
 function getRandomNumbers(){
     return Math.floor(Math.random()*colors.length);
+}
+
+function copyPaste(){
+    const copyText = document.getElementById("clip").textContent;
+    //copyText.select();
+    // copyText.setSelectionRange(0, 99999);
+    var clip = navigator.clipboard.writeText(copyText);
+    console.log(copyText);
+    window.alert("Value Copied : " +  copyText);
 }

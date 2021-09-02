@@ -13,6 +13,7 @@ nav{
     align-items: center;
     height: 60px;
     border-radius: 4px;
+    box-shadow: 1000px grey;
 }
 
 .logo-home{
@@ -48,6 +49,17 @@ main{
     border-radius: 4px;
 }
 
+.ccpybtn{
+    background-color: goldenrod;
+    border: 0;
+    border-radius: 4px;
+    height: 28px;
+    width: 40px;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+}
+
 .btn-box{
     padding-left: 40px;
     padding-top: 10px;
@@ -63,7 +75,4 @@ main{
     cursor: pointer;
 }
 .container{
-}
-
-.btn-hero{
 }
