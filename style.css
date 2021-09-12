@@ -27,11 +27,8 @@ nav{
 
 .ul-link{
     display: flex;
-    /* align-items: center; */
-    /* justify-content: space-between; */
     padding-left: 800px;
     list-style-type: none;
-    /* padding-left: 100px ; */
     position: absolute;
     left: 35%;
 }
@@ -56,8 +53,7 @@ main{
     height: 28px;
     width: 40px;
     color: white;
-    cursor: pointer;
-    align-items: center;
+    cursor: pointer;    
 }
 
 .btn-box{
@@ -75,4 +71,50 @@ main{
     cursor: pointer;
 }
 .container{
+}
+
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 740px){
+      nav{
+          /* background-color: red; */
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          
+      }
+
+      .logo-home{
+            text-decoration: none;
+            font-size: 25px;
+            position: absolute;
+            left: 30%;
+            top: 2%;
+
+        }
+
+        .ul-link{
+            display: none;
+        }
+
+        .menui{
+            background-color: red;
+            height: 30px;
+            width: 35px;
+            position: absolute;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        .ul-link a{
+            background-color: black;
+        }
+
+        main{
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            border-radius: 4px;
+        }
+
 }
